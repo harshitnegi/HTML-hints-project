@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign_3</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  
+    <style>
+        body,html {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        #headr{
+            background-color: rgb(46, 44, 51);
+            height: 60px;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            width: 100vw;
+            z-index: +1;
+        }
+        .logo{
+            font-size: 20px;
+            margin: 0;
+            padding: 18px 0px 0px 18px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+        ul{
+            display: flex;
+            justify-content: end;
+            list-style: none;
+            margin-top: -22px;
+            width: 94vw;
+        }
+        li{
+            margin-right: 40px;
+            font-size: 18px;
+            font-family: 'Roboto', sans-serif;
+        }
+        a, a:visited{
+            text-decoration: none;
+            color:rgb(251, 251, 251);
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        #sec1, #sec2, #sec3, #sec4, #sec5{
+            background-color: blue;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #sec2{
+            background-color: rgb(200, 104, 48);
+        }
+        .home{
+            padding: 0;
+            margin: 0;
+        }
+        .home, .about, .services, .downloads, .contact{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 80px;
+            user-select: none;
+        }
+        #sec2{
+            background-color: rgb(200, 104, 48);
+        }
+        #sec3{
+            background-color: rgb(209, 44, 209);
+        }
+        #sec4{
+            background-color: rgb(186, 214, 24);
+        }
+        #sec5{
+            background-color: rgb(102, 18, 39);
+        }
+        
+        </style>
+</head>
+<body>
+    <header id="headr">
+        <p class="logo">
+            LOGO
+        </p>
+            <!-- Home, about, services, downloads, contact -->
+            <ul>
+                <li><a href="#sec1">Home</a></li>
+                <li><a href="#sec2">About</a></li>
+                <li><a href="#sec3">Services</a></li>
+                <li><a href="#sec4">Downloads</a></li>
+                <li><a href="#sec5">Contact</a></li>
+            </ul>
+    </header>
+
+    <section id="sec1">
+        <p class="home">Home</p>
+     </section>
+    <section id="sec2">
+        <p class="about">About</p>
+    </section>
+    <section id="sec3">
+        <p class="services">Services</p>
+    </section>
+    <section id="sec4">
+        <p class="downloads">Downloads</p>
+    </section>
+    <section id="sec5">
+        <p class="contact">Contact</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Assign2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Hind:wght@300&display=swap" rel="stylesheet">  
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(29, 163, 226);
+        }
+        .form{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .login-area{
+            background-color: rgb(255, 255, 255);
+            height: 600px;
+            width: 500px;
+            align-items: center;
+            border-radius: 12px;
+        }
+        h1{
+            text-align: center;
+            padding-top: 40px;
+            font-weight: 900;
+            font-family:'Bodoni Moda', serif;
+            color:rgb(143, 162, 171)
+        }
+        #block{
+            padding-left: 40px;
+        }
+        #email, #pass{
+            line-height: 2.6em;
+            width: 90%;
+            font-size: 18px;
+            border: 1px solid rgb(214, 214, 214);
+            border-radius: 6px;
+            text-indent: 12px;
+            font-family: 'Hind', sans-serif;
+        }
+        #email::placeholder, #pass::placeholder{
+            font-family: 'Hind', sans-serif;
+            font-size: 18px;
+        }
+        /* #pass::placeholder{
+            font-family: 'Hind', sans-serif;
+            font-size: 18px;
+        } */
+        #check-pass{
+            margin-left: 42px;
+        }
+        #sign{
+            height: 70px;
+            text-align: center;
+            width: 80%;
+            margin-left: 50px;
+            background-color: rgb(9, 135, 173);
+            font-size: 28px;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            cursor: pointer;
+        }
+        #sign:hover{
+            background-color: rgb(58, 124, 144);
+            
+        }
+        #text{
+             text-align: center;
+             font-family: 'Barlow', sans-serif;
+        }
+        #email_empty, #pass_empty{
+            color: red;
+            font-style: italic;
+            margin-top: 2px;
+        }
+        a, a:visited{
+            text-decoration: none;
+            color:rgb(2, 88, 170);
+        }
+        a:hover{
+            color:rgb(40, 180, 240);
+        }
+
+        </style>
+    <script defer src="authentication.js">
+    </script>
+</head>
+<body>
+    <div class="form">
+        <div class="login-area">
+            <h1> Login </h2>
+                <section id="block">
+                    <label style="font-size:22px; font-family: 'Hind', sans-serif;">Email:</label>
+                    <br>
+                    <input id="email" type="email" placeholder="Enter Email" title="Enter Email" autocomplete="off">
+                    <p id="email_empty"></p>
+                </section>
+                <br>
+                <section id="block">
+                    <label style="font-size:22px; font-family: 'Hind', sans-serif;">Password:</label>
+                    <br>
+                    <input id="pass" type="password" placeholder="Enter Password" title="Enter password">
+                    <p id="pass_empty"></p>
+                </section>
+                <br>
+                <input id="check-pass" type="checkbox"> <label for="check-pass" style="font-family: 'Hind', sans-serif">Show Password</label>
+                <br><br><br>
+                <button onClick="check()" type="submit" value="Sign In" id="sign">SIGN IN</button>
+                <section id="text">
+                    <p style="margin-bottom:-10px"> Forgot <a href='#'>Username</a> / <a href='#'>Password </a>?</p>
+                    <p> Don't have an account? <a href='#'>Sign up</a> </p>
+                </section>
+        </div>
+    </div>
+
+
+</body>
+</html>

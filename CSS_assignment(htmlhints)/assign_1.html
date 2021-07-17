@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign_1</title>
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.min.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Noto+Serif&display=swap" rel="stylesheet">   
+    <style>
+        body{
+            background-color: rgb(47, 47, 47);
+        }
+        .prof{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .prof-area{
+            background-color: rgb(149, 115, 86);
+            width: 400px;
+            height: 590px;
+        }
+        .img{
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+        }
+        #name{
+            text-align: center;
+            font-size: 40px;
+            margin-top: 10px;
+            font-family: 'Noto Serif', serif;
+        }
+        #description{
+            text-align: center;
+            margin-top: -40px;
+        }
+        #text{
+            text-align: center;
+            font-size: 23px;
+            margin-top: 34px;
+            font-family: 'Crimson Text', serif;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            margin-right: -32px;
+        }
+        li{
+            margin-right: 90px;
+            font-size: 22px;
+        }
+        .icons{
+            display: flex;
+            justify-content: center;
+            margin-top: 26px;
+        }
+        a, a:visited{
+            text-decoration: none;
+            color: rgb(44, 32, 0);
+        }
+        i:hover{
+            color:rgb(0, 0, 0);
+            font-size: 24px;
+        }
+        
+
+        </style>
+</head>
+<body>  
+    <div class="prof">
+        <div class="prof-area">
+            <section class="img">
+            <img src="../images/mecroppped.jpg" width="180px" height="190px" style="border-radius: 100px;">
+            </section>
+            <p id="name"> Harshit Negi </p>
+            <p id="description"> Another Web Designer </p>
+            <p id="text"> 
+                Specialties are creative UI, HTML5, CSS3,
+                Semantic Web, Responsive Layouts, Web Standards Compliance,
+                Performance Optimization, Cross Device Troubleshooting.
+            </p>
+            <!-- icons -->
+        <section class="icons">
+            <ul>
+                <li><a href="#"><i class="fab fa-instagram i"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f i"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in i"></i></a></li>
+            </ul>
+        </section>
+        </div>
+    </div>
+</body>
+</html>
